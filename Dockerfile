@@ -30,7 +30,9 @@ WORKDIR /strivio
 #
 ## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
+RUN echo "drop"
 ARG drop
+RUN echo ${drop}
 RUN echo ${drop} >> /strivio/helpers/dropbox_uploader.conf
 RUN chmod +x /strivio/helpers/dropbox_uploader.sh
 RUN  /strivio/helpers/dropbox_uploader.sh -f \
