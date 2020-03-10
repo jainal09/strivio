@@ -30,7 +30,8 @@ WORKDIR /strivio
 #
 ## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
-#
+ARG drop
+RUN echo ${drop} >> /strivio/helpers/dropbox_uploader.conf
 RUN chmod +x /strivio/helpers/dropbox_uploader.sh
 RUN  /strivio/helpers/dropbox_uploader.sh -f \
   /strivio/helpers/dropbox_uploader.conf download yaml_files/IO.yaml /strivio/yaml_files/IO.yaml
