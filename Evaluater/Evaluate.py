@@ -32,16 +32,14 @@ class Evaluater:
                             output = subprocess.check_output(["python3", "code/program.py"], stdin = data)
                             output = output.decode("utf-8")
                             output = output.strip('\n')
-
-                            print(output == str(outp))
                             if output == str(outp):
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
-                                case = case + 1
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
+
                     else:
                         raise Exception(
                             "language in lang.yaml and program file doesnt match"
@@ -62,10 +60,10 @@ class Evaluater:
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
-                                case = case + 1
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
+
                     else:
                         raise Exception(
                             "language in lang.yaml and program file doesnt match"
@@ -86,10 +84,10 @@ class Evaluater:
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
-                                case = case + 1
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
+
                     else:
                         raise Exception(
                             "language in lang.yaml and program file doesnt match"
@@ -110,10 +108,10 @@ class Evaluater:
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
-                                case = case + 1
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
+
                     else:
                         raise Exception(
                             "language in lang.yaml and program file doesnt match"
