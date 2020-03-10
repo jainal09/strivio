@@ -21,5 +21,5 @@ jobs:
     steps:
     # Runs a set of commands using the runners shell
     - name: Evaluation
-      run: docker build --build-arg drop=$secrets.drop_box_conf -t strivio && docker run strivio 
+      run: docker build --build-arg drop=$secrets.drop_box_conf -t strivio . && docker run --name strivio strivio
     
