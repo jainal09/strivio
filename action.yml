@@ -1,5 +1,7 @@
 name: 'strivio'
-description: 'Greet someone and record the time'
+description: 'Strivio a GitHub action to host Coding Competetion on GitHub'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    -${{secrets.drop_box_conf}}
