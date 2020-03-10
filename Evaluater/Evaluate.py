@@ -1,7 +1,7 @@
 import subprocess
 import pathlib
 from Parsers.parse import Parser
-from Evaluater.globals.EvaluaterGlobals import LANGUAGES
+from globals.EvaluaterGlobals import LANGUAGES
 import os
 
 my_obj = Parser()
