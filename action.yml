@@ -1,7 +1,9 @@
 name: 'strivio'
 description: 'Strivio a GitHub action to host Coding Competetion on GitHub'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    -${{secrets.drop_box_conf}}
+  docker build
+  --build-arg drop=${{secrets.drop_box_conf}}
+  -t strivio .
+  && docker run
+  --name strivio
+  strivio
