@@ -126,7 +126,12 @@ class Evaluater:
                             data, temp = os.pipe()
                             os.write(temp, bytes(str(inp)+"\n", "utf-8"))
                             os.close(temp)
-                            output = subprocess.check_output(["code/program"], stdin=data)
+                            output = subprocess.check_output(
+                                [
+                                    os.path.abspath("Evaluater/code/program")
+                                ],
+                                stdin=data
+                            )
                             output = output.decode("utf-8")
                             output = output.strip('\n')
                             if output == str(outp):

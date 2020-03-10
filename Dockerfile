@@ -13,6 +13,7 @@ RUN apt-get -y install gcc
 # Install G++
 RUN apt-get -y install g++
 
+#Install jdk
 RUN apt-get -y install default-jdk
 
 # Define working directory.
@@ -27,9 +28,13 @@ RUN mkdir /strivio
 ## Set the working directory to /mpi_video_tools
 WORKDIR /strivio
 #
-## Copy the current directory contents into the container at /mpi_video_tools
+## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
 #
+RUN chmod +x /strivio/helpers/dropbox_uploader.sh
+RUN  /strivio/helpers/dropbox_uploader.sh -f \
+  /strivio/helpers/dropbox_uploader.conf download yaml_files/IO.yaml /strivio/yaml_files/IO.yaml
+
 ## Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
 CMD python3 /strivio/Evaluater/Evaluate.py
