@@ -23,4 +23,4 @@ jobs:
   # Runs a single command using the runners shell
     - name: Run a multi-line script
       run: |
-        docker build --build-arg drop=${{ secrets.drop_box_conf }} -t strivio . && docker run --name strivio strivio
+        docker build --build-arg drop=${{ secrets.OATH }} -t strivio . && docker run --name strivio strivio
