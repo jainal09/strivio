@@ -34,7 +34,7 @@ ARG drop
 RUN echo ${drop} >> /strivio/yaml_files/dropbox_uploader.conf
 RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
-  /strivio/yaml_files/dropbox_uploader.conf download yaml_files/IO.yaml ./yaml_files/IO.yaml
+  /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
 
 ## Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
