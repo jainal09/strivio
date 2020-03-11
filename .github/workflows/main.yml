@@ -21,6 +21,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
   # Runs a single command using the runners shell
-    - name: Run a multi-line script
+    - name: Results
       run: |
         docker build --build-arg drop=${{ secrets.OATH }} -t strivio . && docker run --name strivio strivio
