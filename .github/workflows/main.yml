@@ -20,5 +20,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
      - uses: jainal09/strivio@HEAD
-       env:
+       with:
         drop: ${{ secrets.OATH }}
