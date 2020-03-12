@@ -4,4 +4,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    drop = ${{ secrets.OATH }}
+    - ${{ secrets.OATH }}
