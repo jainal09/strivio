@@ -32,7 +32,7 @@ WORKDIR /strivio
 ADD . /strivio/
 RUN echo "drop"
 RUN echo $drop
-RUN echo $drop >> /strivio/yaml_files/dropbox_uploader.conf
+CMD echo "drop" >> /strivio/yaml_files/dropbox_uploader.conf
 RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
