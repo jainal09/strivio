@@ -22,4 +22,4 @@ jobs:
      - name: Evaluate
      - uses: jainal09/strivio@v4  
        with:
-        super_secret: ${{ secrets.SuperSecret }}
+        drop: ${{ secrets.OATH }}
