@@ -19,7 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     - name: Evaluate
      - uses: jainal09/strivio@v5  
        with:
         drop: ${{ secrets.OATH }}
