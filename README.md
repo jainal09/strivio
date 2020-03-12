@@ -5,7 +5,7 @@ A  GitHub action for hosting Coding Competetion on GitHub
 
 ## Usage
 
-## Orgainizers
+## Organizers
 
  1. Head to [DropBox](https://www.dropbox.com/developers/apps_tk=pilot_lp&_ad=topbar4&_camp=myapps) and Create an App
  2. After you Create your Dropbox App click on Generate Access token and Copy it.![enter image description here](https://miro.medium.com/max/938/1*vLvuPuX5n-klKMConAXQug.png)
@@ -42,7 +42,7 @@ outputs:
 ```
 7. Upload this to DropBox and done 😃!
 
-## Paticipants
+## Participants
 1. Clone the Repo
 2. Head to 📁 Evaluater -> 📁 code
 3. Open the file of Programing Language of your choice and start Coding 👨‍💻 
