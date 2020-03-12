@@ -19,4 +19,4 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: jainal09/strivio@v3
+    - uses: jainal09/strivio@v4
