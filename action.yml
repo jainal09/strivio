@@ -1,11 +1,7 @@
 name: 'Strivio'
 description: 'Checks codes of participants of the Coding Competetion'
-inputs: 
-  drop:
-    description: 'OATH key'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.drop }}
+    - ${{ secrets.OATH }}
