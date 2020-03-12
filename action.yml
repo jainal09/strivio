@@ -3,5 +3,3 @@ description: 'Checks codes of participants of the Coding Competetion'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ secrets.OATH }}
