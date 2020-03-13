@@ -1,7 +1,7 @@
 import subprocess
 import pathlib
-from Parsers.parse import Parser
-from globals.EvaluaterGlobals import LANGUAGES
+from Evaluater.Parsers.parse import Parser
+from Evaluater.globals.EvaluaterGlobals import LANGUAGES
 import os
 
 my_obj = Parser()
@@ -14,7 +14,7 @@ class Evaluater:
     def evaluate(self):
         io_yaml_parsed_dic = my_obj.parse_yaml(io_yaml_abs_path)
         io_dic = my_obj.io_fetcher(io_yaml_parsed_dic)
-        language_dic = my_obj.parse_yaml(os.path.abspath("Evaluater/code/lang.yaml"))
+        language_dic = my_obj.parse_yaml(os.path.abspath("lang.yaml"))
         language = language_dic["language"]
         inputs = io_dic["inputs"]
         outputs = io_dic["outputs"]
@@ -24,7 +24,7 @@ class Evaluater:
                 if language == "python3":
                     file_extension = pathlib.Path(
                         os.path.abspath(
-                            "Evaluater/code/program.py"
+                            "program.py"
                         )
                     ).suffix
                     if file_extension == to_check_extension:
@@ -37,7 +37,7 @@ class Evaluater:
                                 [
                                     "python3",
                                  os.path.abspath(
-                                     "Evaluater/code/program.py"
+                                     "program.py"
                                  )
                                 ],
                                 stdin=data
@@ -59,7 +59,7 @@ class Evaluater:
                 elif language == "cpp":
                     file_extension = pathlib.Path(
                         os.path.abspath(
-                            "Evaluater/code/program.cpp"
+                            "program.cpp"
                         )
                     ).suffix
                     if file_extension == to_check_extension:
@@ -68,10 +68,10 @@ class Evaluater:
                                 "g++",
                                 "-o",
                                 os.path.abspath(
-                                    "Evaluater/code/program"
+                                    "program"
                                 ),
                                 os.path.abspath(
-                                    "Evaluater/code/program.cpp"
+                                    "program.cpp"
                                 )
                             ]
                         )
@@ -83,7 +83,7 @@ class Evaluater:
                             output = subprocess.check_output(
                                 [
                                     os.path.abspath(
-                                        "Evaluater/code/program"
+                                        "program"
                                     )
                                 ],
                                 stdin=data
@@ -105,7 +105,7 @@ class Evaluater:
                 elif language == "c":
                     file_extension = pathlib.Path(
                         os.path.abspath(
-                            "Evaluater/code/program.c"
+                            "program.c"
                         )
                     ).suffix
                     if file_extension == to_check_extension:
@@ -114,10 +114,10 @@ class Evaluater:
                                 "gcc",
                                 "-o",
                                 os.path.abspath(
-                                    "Evaluater/code/program"
+                                    "program"
                                 ),
                                 os.path.abspath(
-                                    "Evaluater/code/program.c"
+                                    "program.c"
                                 )
                             ]
                         )
@@ -128,7 +128,7 @@ class Evaluater:
                             os.close(temp)
                             output = subprocess.check_output(
                                 [
-                                    os.path.abspath("Evaluater/code/program")
+                                    os.path.abspath("program")
                                 ],
                                 stdin=data
                             )
@@ -149,14 +149,14 @@ class Evaluater:
                 elif language == "java":
                     file_extension = pathlib.Path(
                         os.path.abspath(
-                            "Evaluater/code/program.java"
+                            "program.java"
                         )
                     ).suffix
                     if file_extension == to_check_extension:
                         subprocess.call(
                             [
                                 "javac",
-                                 os.path.abspath("Evaluater/code/Program.java")
+                                 os.path.abspath("Program.java")
                             ]
                         )
                         case = 0
@@ -167,7 +167,7 @@ class Evaluater:
                             output = subprocess.check_output(
                                 [
                                     "java",
-                                    "Evaluater.code.Program"
+                                    "Program"
                                 ],
                                 stdin=data
                             )

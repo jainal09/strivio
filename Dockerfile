@@ -27,15 +27,14 @@ RUN mkdir /strivio
 #
 ## Set the working directory to /mpi_video_tools
 WORKDIR /strivio
-#
+
 ## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
-ARG drop
-RUN echo ${drop} >> /strivio/yaml_files/dropbox_uploader.conf
+RUN echo $INPUT_OATH >> /strivio/yaml_files/dropbox_uploader.conf
 RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
 
 ## Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
-CMD python3 /strivio/Evaluater/Evaluate.py
+CMD python3 /strivio/Evaluate.py

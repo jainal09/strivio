@@ -2,7 +2,7 @@ name: 'Strivio'
 author: 'Jainal Gosaliya'
 description: 'Checks codes of participants of the Coding Competetion'
 inputs: 
-  drop:
+  OATH:
     description: 'OATH key'
     required: true
 runs:
