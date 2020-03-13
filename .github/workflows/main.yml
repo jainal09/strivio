@@ -20,7 +20,3 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
-  # Runs a single command using the runners shell
-    - name: Results
-      run: |
-        docker build --build-arg drop=${{ secrets.OATH }} -t strivio . && docker run --name strivio strivio
