@@ -30,14 +30,6 @@ WORKDIR /strivio
 
 ## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
-
-CMD echo $INPUT_OATH
-CMD echo $INPUT_OATH >> /strivio/yaml_files/dropbox_uploader.conf
-CMD RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
-# RUN python3 /strivio/test.py >> /strivio/yaml_files/dropbox_uploader.conf
-CMD /strivio/yaml_files/dropbox_uploader.sh -f \
-  /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
-# Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
-CMD echo "hi i am here"
-CMD ["python3", "-u", "/strivio/Evaluate.py"]
+RUN chmod +x /strivio/run.sh
+CMD /strivio/run.sh
