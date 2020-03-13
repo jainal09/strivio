@@ -39,4 +39,5 @@ CMD /strivio/yaml_files/dropbox_uploader.sh -f \
   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
 # Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
+CMD echo "hi i am here"
 CMD python3 /strivio/Evaluate.py
