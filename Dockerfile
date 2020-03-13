@@ -36,7 +36,7 @@ ADD . /strivio/
 # RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 # RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
 #   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
-CMD python3 /strivio/test.py
+RUN python3 /strivio/test.py
 # ## Install any needed packages specified in requirements.txt
 # RUN pip3 install -r requirements.txt
 # CMD python3 /strivio/Evaluate.py
