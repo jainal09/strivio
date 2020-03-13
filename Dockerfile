@@ -31,12 +31,12 @@ FROM python:3.7
 # ## Copy the current directory contents into the container at /strivio
 # ADD . /strivio/
 
-RUN echo $INPUT_OATH
-# RUN echo $INPUT_OATH >> /strivio/yaml_files/dropbox_uploader.conf
-# RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
+CMD echo $INPUT_OATH
+CMD echo $INPUT_OATH >> /strivio/yaml_files/dropbox_uploader.conf
+CMD RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 # RUN python3 /strivio/test.py >> /strivio/yaml_files/dropbox_uploader.conf
-# RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
-#   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
-# # Install any needed packages specified in requirements.txt
-# RUN pip3 install -r requirements.txt
-# CMD python3 /strivio/Evaluate.py
+CMD /strivio/yaml_files/dropbox_uploader.sh -f \
+  /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
+# Install any needed packages specified in requirements.txt
+RUN pip3 install -r requirements.txt
+CMD python3 /strivio/Evaluate.py
