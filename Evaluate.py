@@ -6,7 +6,7 @@ import os
 
 my_obj = Parser()
 
-io_yaml_abs_path = os.path.abspath('strivio/yaml_files/IO.yaml')
+io_yaml_abs_path = '/strivio/yaml_files/IO.yaml'
 
 
 class Evaluater:
