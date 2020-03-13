@@ -36,7 +36,7 @@ RUN echo $INPUT_OATH
 RUN chmod +x /strivio/yaml_files/dropbox_uploader.sh
 RUN python3 /strivio/test.py >> /strivio/yaml_files/dropbox_uploader.conf
 RUN  /strivio/yaml_files/dropbox_uploader.sh -f \
-#   /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
-# ## Install any needed packages specified in requirements.txt
-# RUN pip3 install -r requirements.txt
-# CMD python3 /strivio/Evaluate.py
+  /strivio/yaml_files/dropbox_uploader.conf download IO.yaml ./yaml_files/IO.yaml
+# Install any needed packages specified in requirements.txt
+RUN pip3 install -r requirements.txt
+CMD python3 /strivio/Evaluate.py
