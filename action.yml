@@ -1,9 +1,6 @@
 name: 'Strivio'
 author: 'Jainal Gosaliya'
 description: 'Checks codes of participants of the Coding Competetion'
-branding:
-  icon: "check-circle"
-  color: "blue
 inputs: 
   oath:
     description: 'OATH key'
@@ -11,3 +8,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+branding:
+  icon: "check-circle"
+  color: "blue
