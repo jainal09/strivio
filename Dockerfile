@@ -2,6 +2,7 @@
 # We Use an official ubuntu 18.04
 FROM ubuntu:18.04
 FROM python:3.7
+FROM openjdk:7
 
 RUN apt-get update \
   && apt-get install -y python3.7-dev \
@@ -14,7 +15,7 @@ RUN apt-get -y install gcc
 RUN apt-get -y install g++
 
 #Install jdk
-RUN apt-get -y install default-jdk
+#RUN apt-get -y install default-jdk
 
 # Define working directory.
 
