@@ -40,6 +40,7 @@ class Evaluater:
                             )
                             output = output.decode("utf-8")
                             output = output.strip('\n')
+                            print(output)
                             if output == str(outp):
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
