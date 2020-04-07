@@ -1,3 +1,4 @@
+
 <p align="center">
    <img src="https://lh3.googleusercontent.com/P9Fr-v4o_3-u2MdAtLdrJWOuhZZFOzTZoVmyVGedjuKm-Jzh0Tbjh14G0jO7F8wkknb3wKdasVWbJQZTD4D6wmcDJTzxZSiMFzUgVVpu4DwjeyTKOqGQgz7swuqF63BwGc0Uz79YzVuQvjNuBVQnLQS3F7OrTI4MumZe4cwVUdqFAEvfKlaPVKQMzaFk3WUf5PkjgWPhmvMYfoTUumO5wLjYIWn_cvHqIEyzbMAsWcNpR4VQO8__E2C7xHaPSVfH-O2IuqAQhKSrAe8cky64mmN4TPf_4SqPqdyv6HIEBA9hIEsNhmQWd-lWTjbGdxDIH0p_U6X8pawzFbDI58vNEy2HPvTTKdgj8FPRcRrdMG8w1q8Ushaz9Noso-l3WYoYi0UYYi8mWMiZPZL3xJHE57novCNxQO-IH5heRyM9Vqs9bONq5H1PS_z8kxZBvITqQ4WyRmu3-YXI-kWNNfJP_2W5oz3wr-W1zMWvLSz-7eA1v819XjtSjT_W4Kl9M60YpB7peuM9KIJ_PMyVTsa6ri9qeWdTVnpolXDKDgrDvfveSvEvbi-5T9HuAW7E_5SPq7EMdwXCv01JUMI9bH-6X_1hBl8IMrFP3aKvmJUSj1DK15JWcDv_YhwVqbGH3qtM9bC4hfPzS7ip-V5Cxw0X6z8E35xdOMNaoBpbMABYrBtRbcjsNS-lEz6J2HlgzNc46qnmjNLLdXnT79aqYDt2cf6dR_dZ3kP3LLL0ZSUo_mRVaqNr=s500-no" alt="Strivio Logo"/>
 </p>
@@ -9,13 +10,8 @@ A  GitHub action for hosting Coding Competetion on GitHub
 
  1. Head to [DropBox](https://www.dropbox.com/developers/apps_tk=pilot_lp&_ad=topbar4&_camp=myapps) and Create an App
  2. After you Create your Dropbox App click on Generate Access token and Copy it.![enter image description here](https://miro.medium.com/max/938/1*vLvuPuX5n-klKMConAXQug.png)
- 
-3. In GitHub Repo open Settings/Secrets and create a Secret
-4. Name of the secret should be **"OATH"**
-![enter image description here](https://lh3.googleusercontent.com/AhSH9lwyBRJuEuODKSrr-K-ap-EoRviAS3oA_WwEh5Cz33dAmSIoQujt-YfCvMZXvxAM1PFr-xGmPg86mMfQPraXv2rsr8FP-u7Bp84x513Q-DhaSVVW1W2mcX3hkt-udc4-tQN7Beb3JMUyG-rAVmMLSn0boetZ_g3FnXBXaLsdzktrhHEpwNpGzu9AMETT1eEs4dG1Pmec5FQpKcDegSi5EMhLlWN8xCbEh5H-loaqqvxan-ow0Mctx-gTyPGKEi-6qprKEH3AOKhmd-z4uXAfjhcxr7rXs92dPlxXBkBQlel0qMPimLikyR6Hkgp4TL58mhqdGMUAbDJ391kq7KXZk67rTvyvASukKaGSMJ5kC2yMwBDmD_RUJLHTDnBQ30cUGPZ2ZVJgBhlNCLZkwxIw_ik_GM-nbLyTG9yF7VGCSxPHQGIiL1KW2Cj1LIbyNWR9G5YdmXp_UNnSrScq3AQBH2wjNH1gMWQv4TyB9kAbDI_QrWNsFZHk6HgbBzprlJNikIaGMf39YGkJH81gt7XKLcxuoazbEFdpqQTa23DWC6HX6aRm8zjddudREt7J5GMnbRuterdrAPYeazf7rXfi6Z0Yh3aWGwYzFkimLasvJbtRmd4jP79a3urcK2ikGE-hQqMeYIS7vrUybncBpN8tlURXH5nAgRHTHXkebm3BXA1SvGKLS7z-HQwmKLbduM020F1pQud6CoZ1D1SVeT-Bboc6igNWzM-o0ICcOjTaZl5g=w975-h386-no)
-
-5. Create a File Known as 🗃️ "IO.yaml" for all the Input / Output Test Cases
-6. The File should Look like this
+3. Create a File Known as 🗃️ "IO.yaml" for all the Input / Output Test Cases
+4. The File should Look like this
 ```yaml  
 inputs:  
   input1:  
@@ -40,25 +36,57 @@ outputs:
   output5:  
     6  
 ```
-7. Upload this to DropBox and done 😃!
-
+5. Upload this to the **Root Directory** of Drop Box and done 😃!
+6. Send the OATH token to participants - this works like an access token for the workshop.
 ## Participants
-1. Clone the Repo
-2. Head to 📁 Evaluater -> 📁 code
-3. Open the file of Programing Language of your choice and start Coding 👨‍💻 
-4. After Coding is done Open a file 🗃️ "lang.yaml"
-5. Add the name of Programing Language
+1. In GitHub Repo open Settings/Secrets and create a Secret
+2. Name of the secret should be **"OATH"** and value should be the access token which the organizer gave you!
+![enter image description here](https://lh3.googleusercontent.com/AhSH9lwyBRJuEuODKSrr-K-ap-EoRviAS3oA_WwEh5Cz33dAmSIoQujt-YfCvMZXvxAM1PFr-xGmPg86mMfQPraXv2rsr8FP-u7Bp84x513Q-DhaSVVW1W2mcX3hkt-udc4-tQN7Beb3JMUyG-rAVmMLSn0boetZ_g3FnXBXaLsdzktrhHEpwNpGzu9AMETT1eEs4dG1Pmec5FQpKcDegSi5EMhLlWN8xCbEh5H-loaqqvxan-ow0Mctx-gTyPGKEi-6qprKEH3AOKhmd-z4uXAfjhcxr7rXs92dPlxXBkBQlel0qMPimLikyR6Hkgp4TL58mhqdGMUAbDJ391kq7KXZk67rTvyvASukKaGSMJ5kC2yMwBDmD_RUJLHTDnBQ30cUGPZ2ZVJgBhlNCLZkwxIw_ik_GM-nbLyTG9yF7VGCSxPHQGIiL1KW2Cj1LIbyNWR9G5YdmXp_UNnSrScq3AQBH2wjNH1gMWQv4TyB9kAbDI_QrWNsFZHk6HgbBzprlJNikIaGMf39YGkJH81gt7XKLcxuoazbEFdpqQTa23DWC6HX6aRm8zjddudREt7J5GMnbRuterdrAPYeazf7rXfi6Z0Yh3aWGwYzFkimLasvJbtRmd4jP79a3urcK2ikGE-hQqMeYIS7vrUybncBpN8tlURXH5nAgRHTHXkebm3BXA1SvGKLS7z-HQwmKLbduM020F1pQud6CoZ1D1SVeT-Bboc6igNWzM-o0ICcOjTaZl5g=w975-h386-no)
+3. Click on actions
+![enter image description here](https://lh3.googleusercontent.com/GbdrYDNw6P_my4YNcLwXFZSWJp-4inNUe71SR8vOYceeepla2Ez8PPUFcFn89dSswVzamiUs4eNwN7Hop5ShC0FD-kkf9HkMuMt2OQtkWotw8kcxjn0CE87Nu7IA_l4FCNz-XETQrWma_Sa4M7eN1N7QQ0wIse4oBrjjwNhHu8PDwQjV-FTNbhzytlItTAhzfIXektBiP3YGKyvBsXT4IOL_tkp1jpzG1H5JO5dZYAytsEqOIAlrATPONrUTDlIHb_Fp2qb4OOBYXmpIbioCSlRSAQlg4pC_QMzwbdlC-wP24tmYnKJTQpxmdXIs4_5ObcooCKbRuwXkaMP61uSilxv1YLRQb_-UDZ5Swgox2qKCuLmr6Sb1bVjuQFa4YAlydDi8EJxZAocPFRhJRomz9Jph28GingfEz_l9MlxBEoySPOb2E94Z8l6apM2yk9gvOg1FZY9Dof8U57WA28zroD_FuHypiuGk5qGg5bPgsTwf66KB24pbhPuXrUti4wpT5_wsK5qJzbqBI6MLKjgW2us0QBSoJilF7lo4J26vSQeJ2qLzwJHXqYejn4KqfGFKg2Wm2Pmim_NFeheTHDBa3VZvGprBBzRmvE7gAcSKJoinZYRrFtq3IkTYRYPQ_BZsoKtk6WJwAoSNXvXoD4UseK5fPZ6WHRKvBexJpyPM7HHtSxpNg4CUvCApODLCan3oOrpdHXcY32wnzh9sZMQhi8AnxFnQpVKhQHiDNqytYusML9_p=w1203-h87-no)
+4. Click on Set up a workflow yourself
+![enter image description here](https://lh3.googleusercontent.com/BfdHTR0sxaUJbgsvEfcHCKoFzpOlW43f9fMMubIlw8C42NpAORuV9NAFlpjny0c3fmG2Gh3SHZrR2Gd14D0dJObPFNXwVXtThEO2ZGRVfEbR4s76KVI20KJIV3HfMhaYwdg_u9C6Ic4=w1860-h243-no)
+5. Delete everything and paste the below code
+```yaml
+name: Evaluation
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run action
+      uses: jainal09/strivio@master 
+      with:
+        oath: ${{ secrets.oath }}
+```
+Click on `start-commit`
+6. Now its time to start coding!  Clone your repo and start working on the problem.
+7. Supported Programming Languages `python, java, c++, c`
+8. Create a file program.py - supported extension with `.c .cpp .java .py`
+9. After Coding is done create a file 🗃️ "lang.yaml"
+10.  Add the below code.
+```yaml
+language:
+	python3
+``` 
+11. Replace the name of Programming Language in the above code as follows.
 ` python - write python3`
 `java - write java`
 `c++ - write cpp`
 `c - write c`
-*No language other than above are supported!*
-6. Commit the code and push
-7. Head to GitHub and select Actions
+
+***No language other than above are supported!***
+12. Commit the code and push
+13. Head to GitHub and select Actions
 ![enter image description here](https://lh3.googleusercontent.com/GbdrYDNw6P_my4YNcLwXFZSWJp-4inNUe71SR8vOYceeepla2Ez8PPUFcFn89dSswVzamiUs4eNwN7Hop5ShC0FD-kkf9HkMuMt2OQtkWotw8kcxjn0CE87Nu7IA_l4FCNz-XETQrWma_Sa4M7eN1N7QQ0wIse4oBrjjwNhHu8PDwQjV-FTNbhzytlItTAhzfIXektBiP3YGKyvBsXT4IOL_tkp1jpzG1H5JO5dZYAytsEqOIAlrATPONrUTDlIHb_Fp2qb4OOBYXmpIbioCSlRSAQlg4pC_QMzwbdlC-wP24tmYnKJTQpxmdXIs4_5ObcooCKbRuwXkaMP61uSilxv1YLRQb_-UDZ5Swgox2qKCuLmr6Sb1bVjuQFa4YAlydDi8EJxZAocPFRhJRomz9Jph28GingfEz_l9MlxBEoySPOb2E94Z8l6apM2yk9gvOg1FZY9Dof8U57WA28zroD_FuHypiuGk5qGg5bPgsTwf66KB24pbhPuXrUti4wpT5_wsK5qJzbqBI6MLKjgW2us0QBSoJilF7lo4J26vSQeJ2qLzwJHXqYejn4KqfGFKg2Wm2Pmim_NFeheTHDBa3VZvGprBBzRmvE7gAcSKJoinZYRrFtq3IkTYRYPQ_BZsoKtk6WJwAoSNXvXoD4UseK5fPZ6WHRKvBexJpyPM7HHtSxpNg4CUvCApODLCan3oOrpdHXcY32wnzh9sZMQhi8AnxFnQpVKhQHiDNqytYusML9_p=w1203-h87-no)
-8. Select your last commit, click build and click Results 🤞
+14. Select your last commit, click build and click Results 🤞
 ![enter image description here](https://lh3.googleusercontent.com/wwYJR6AaxTNMK1BVWNNZaKEfc5XQwpAXZSqedtnVZu7WFO7pYdGnvpBngqOcRJOuLnaWeo9liBU6jFoLu6W1jKYhSeJyyNL4pqSIB6JnT0gA_-gD6hQC00wbwW4HebwC5MCrFDa6HM5CKA7wQ-JD_ScNyKIPU9cKQfx43UMCHDauAHd3aPvMmFBuHpqjbcKAZly_YZ49Goor3bNArTJTtkDy2ATE2WTNJjmQjwS4pFALXCRQg_HAQcKWZaBU7HcHubxrA21aiSUSH-1ZWSIUOL1QKEVsFrDjpHBZdOC5Uan6Y0VYrejnXVwTsJUzc0PxbK2uuYYV4Y-hTwhq3-TMCNfNVBdhz-myHkSmMIoM4orDa-7r9A_iNBzHTVMfmWp2UhRVISL7n2iGjkGAA_QfeEjaw3HrSEDAACt0xXEUhIjWVQ_KrkIUpJlArjRDVWqlkT_yWZL1phs6_HA7K8XaHyF2ovoRZtka7YZq8hVy1-Ys8qW5t2Ec0BkMNCchZ7LxvQuDZCxjQPwZlYjRTZBSZF3YsUQaWQOUS1BCPl1egd0ZQyp0hXD18VHN3pS5NkW0NjfsIrH07EU8qwX59PjPw-MLjTpkBR3LR8vQtQ7-8DYVhHbb1xyZv5fZuNBocx3FRrJAkP_57MoQWNcdn38DG493sB6JUb1AD9CO2rwAto_S79JD0d3m25qU3c4DWBRneKLg8erhW5YKY6zObZRJkBszSFNlZJ4Bd1ZYe9KUlGwHaq3w=w1440-h245-no)
-9. Check if your code passed all the Test Case ✔️ or ❌
+15. Check if your code passed all the Test Case ✔️ or ❌
 
 ![enter image description here](https://lh3.googleusercontent.com/fcgkExGB9GfqyzwilyWSF0PTlNmx_7zxixYwtSZyZ3QUTZy-TGA56rpg92WYvhHX0BMvx-PV6rJSYILwcxslKMnUNNJcduHDyvwkY0fcEXyzEY5nN3d9Z47gAfqnkG5xmptR4rIjfn8oa2chIXiZ7hsQY7Evl9kOsIcxynJueJibi8dScoXYNtd90Rgc2Fi_oT7OhtJKjvaVlxYaR4AhTDFrsy_1VksCThDR9hAPhF3e3QWncYfO28wczHDe80YQ_x7ZAn_5yLV1SYHc23n3Xq2seaI-j5F8rBFPkjlfC7WX70I52hAybSNet7MKZG1PvIpnTSZKjU35N9SoDfnjGJv5W6rxdLY9y-_tx2zAs1qp6HaIx0XQNBpoCJeVv90p_3pS7cLVhgd-pA7upl23B5WcGHKe4bpKojav1jqRZrUu5fN9R7Ic2pA82-cgfrtVSWXt6v3_LxR0LiRaDR-xrvxmGCEQI4-a6vDZlqMfLcVF9jmamILtwtbIuPvv8hxOivoe_IjPB5lkAnP6vMSsqv4fuEagFHuy4rMiFO6bTeReM1wdvCvnssM-E9b34z-FeW5UP6WICqvSEdK_p79XdzSmx3zL3iagXweSlwcriKJSSuxr9xtdPkgdv1UwfF_yfOWAWFv4GjFCWvfCDee40O_2zZoynFYUx9RaZ9R2TemE1_G3D06DH7wNA9KOLEWtX32R2CFGHTLwZTZdjeoj9fS8qYH9SYkY2d8E8g3eSi-vlLte=w367-h125-no) 
 
