@@ -31,6 +31,6 @@ WORKDIR /strivio
 
 ## Copy the current directory contents into the container at /strivio
 ADD . /strivio/
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 RUN chmod +x /strivio/run.sh
 CMD /strivio/run.sh
