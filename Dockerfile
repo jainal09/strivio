@@ -4,7 +4,7 @@ FROM ubuntu:18.04
 FROM python:3.7
 FROM openjdk:7
 
-RUN apt-get update && apt-get install -y python-pip
+RUN apt-get update && apt-get install -y python3-pip
 #   && apt-get install -y python3.7-dev \
 #   && apt-get install -y python3-pip \
 #   && pip3 install --upgrade pip
