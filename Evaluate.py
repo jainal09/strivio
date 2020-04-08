@@ -14,14 +14,11 @@ class Evaluater:
 
     def evaluate(self):
         io_yaml_parsed_dic = my_obj.parse_yaml(io_yaml_abs_path)
-        print(io_yaml_parsed_dic)
         io_dic = my_obj.io_fetcher(io_yaml_parsed_dic)
         language_dic = my_obj.parse_yaml(os.path.abspath("lang.yaml"))
         language = language_dic["language"]
         inputs = io_dic["inputs"]
         outputs = io_dic["outputs"]
-        print(inputs)
-        print(outputs)
         if language:
             if str(language) in LANGUAGES:
                 to_check_extension = LANGUAGES[language]
@@ -32,10 +29,8 @@ class Evaluater:
                         )
                     ).suffix
                     if file_extension == to_check_extension:
-                        print("in python")
                         case = 1
                         for inp, outp in zip(inputs, outputs):
-                            print("input",inp)
                             data, temp = os.pipe()
                             os.write(temp, bytes(str(inp), "utf-8"))
                             os.close(temp)
@@ -50,19 +45,11 @@ class Evaluater:
                             )
                             output = output.decode("utf-8")
                             output = re.sub('\s+', '', output)
-                            outp = re.sub('\s+', '', str(outp))
-                            print(output)
-                            print(outp)
+                            outp = re.sub('\s+', '', str(outp))                        
                             if output == outp:
-                                print("in if")
-                                print(output)
-                                print(outp)      
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
-                                print("in else")
-                                print(output)
-                                print(outp)      
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
