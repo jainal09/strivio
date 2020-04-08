@@ -69,23 +69,32 @@ jobs:
         oath: ${{ secrets.oath }}
 ```
 Click on `start-commit`
+
 6. Now its time to start coding!  Clone your repo and start working on the problem.
+
 7. Supported Programming Languages `python, java, c++, c`
+
 8. Create a file program.py - supported extension with `.c .cpp .java .py`
-9. After Coding is done create a file 🗃️ "lang.yaml"
+
+9. After Coding is done create a file 🗃️ **"lang.yaml"**
+
 10.  Add the below code.
 ```yaml
 language:
 	python3
 ``` 
+
 11. Replace the name of Programming Language in the above code as follows.
+
 ` python - write python3`
 `java - write java`
 `c++ - write cpp`
 `c - write c`
 
 ***No language other than above are supported!***
+
 12. Commit the code and push
+
 13. Head to GitHub and select Actions
 ![enter image description here](https://lh3.googleusercontent.com/GbdrYDNw6P_my4YNcLwXFZSWJp-4inNUe71SR8vOYceeepla2Ez8PPUFcFn89dSswVzamiUs4eNwN7Hop5ShC0FD-kkf9HkMuMt2OQtkWotw8kcxjn0CE87Nu7IA_l4FCNz-XETQrWma_Sa4M7eN1N7QQ0wIse4oBrjjwNhHu8PDwQjV-FTNbhzytlItTAhzfIXektBiP3YGKyvBsXT4IOL_tkp1jpzG1H5JO5dZYAytsEqOIAlrATPONrUTDlIHb_Fp2qb4OOBYXmpIbioCSlRSAQlg4pC_QMzwbdlC-wP24tmYnKJTQpxmdXIs4_5ObcooCKbRuwXkaMP61uSilxv1YLRQb_-UDZ5Swgox2qKCuLmr6Sb1bVjuQFa4YAlydDi8EJxZAocPFRhJRomz9Jph28GingfEz_l9MlxBEoySPOb2E94Z8l6apM2yk9gvOg1FZY9Dof8U57WA28zroD_FuHypiuGk5qGg5bPgsTwf66KB24pbhPuXrUti4wpT5_wsK5qJzbqBI6MLKjgW2us0QBSoJilF7lo4J26vSQeJ2qLzwJHXqYejn4KqfGFKg2Wm2Pmim_NFeheTHDBa3VZvGprBBzRmvE7gAcSKJoinZYRrFtq3IkTYRYPQ_BZsoKtk6WJwAoSNXvXoD4UseK5fPZ6WHRKvBexJpyPM7HHtSxpNg4CUvCApODLCan3oOrpdHXcY32wnzh9sZMQhi8AnxFnQpVKhQHiDNqytYusML9_p=w1203-h87-no)
 14. Select your last commit, click build and click Results 🤞
