@@ -29,6 +29,7 @@ class Evaluater:
                         )
                     ).suffix
                     if file_extension == to_check_extension:
+                        print("in python")
                         case = 1
                         for inp, outp in zip(inputs, outputs):
                             data, temp = os.pipe()
@@ -46,10 +47,18 @@ class Evaluater:
                             output = output.decode("utf-8")
                             output = re.sub('\s+', '', output)
                             outp = re.sub('\s+', '', str(outp))
+                            print(output)
+                            print(outp)
                             if output == outp:
+                                print("in if")
+                                print(output)
+                                print(outp)      
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
+                                print("in else")
+                                print(output)
+                                print(outp)      
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
