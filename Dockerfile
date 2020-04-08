@@ -1,4 +1,3 @@
-FROM ubuntu:18.04
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /strivio
 WORKDIR /strivio
