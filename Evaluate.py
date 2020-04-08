@@ -19,7 +19,7 @@ class Evaluater:
         language = language_dic["language"]
         inputs = io_dic["inputs"]
         outputs = io_dic["outputs"]
-        print(f"{inputs} input {outputs} outputs)
+        print(f"{inputs} input {outputs} outputs")
         if language:
             if str(language) in LANGUAGES:
                 to_check_extension = LANGUAGES[language]
