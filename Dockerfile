@@ -1,3 +1,4 @@
+FROM ubuntu-python-pip-supervisor
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /strivio
 WORKDIR /strivio
