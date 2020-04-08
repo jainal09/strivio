@@ -2,7 +2,9 @@
 <p align="center">
    <img src="https://lh3.googleusercontent.com/INd4HkZPGXzvbANFlDQTzHiTIBoHSmz-BnjBrD86TOzXe5L_QFYv9n0EzVzInmYYhfAT3DbrjkKKNgULoYNdVDkYSP4t_3s5ROqyE3MxUAjqJYkK_WqLyuG4CQFZGZUiR-1UHWgdweZdCV_tLL_SnEpQ20Fe_BJJo3RvIDYdws-qko-njrmBVZOov4Y0jC3X7jvIIXIOKoXfL1NO9TBksMVkh684F3SiqiXZ7orVzxQbu9oxQgxfJQ1sOkyKLbKBf0tPeVa4bsiYAaHBobyQRMHU0S0N3sCJww-Tlro-SeM296CfHbmlOrfvWJvfRTBQ84bwAf3YUKYlfdN4wvS0gam1mhdMKGOu0b-YXPdk8Oa5wLbikmrPG99S0AjqgOtLIuyncKAps9E5YQ8XLnPOxbdG9EhHic7FTsF1QPvLIUOb1humJJpoLtzr6Q9hhmIHEQIRFJL_-MfCT3KK-XLkCZ-2HhNPdtPCsgqe7YqcL8dXKnofjzn4Jafjv-do9N-_Up5V86ZgF6XXnuJuFcZWSGSatFp6DYWgzDXh7HXmI3fNRIv2kt79BKNg9vmBjTqEeWVtbZ64hCOCIi4oHIOVWaiZHgD6GEnRaW1fMw6je-YZ-qseiClKVKoXj1auObu6_8yUbDu1vPLGvv4idKV-ajUh3PP3b30NCSmsOyipZeRpBi4OR7NzzhdQFAGUg1l8a-c-NLQQph0egiCVzn1FNw-Goupt7lCeSqY13PhhA64d7DIFVqZVzidv=w326-h258-no" alt="Strivio Logo"/>
 </p>
-A  GitHub action for hosting Coding Competetion on GitHub
+<p align="center">
+A  GitHub action for hosting Coding Competetion on GitHub.
+</p>
 
 ## Usage
 
