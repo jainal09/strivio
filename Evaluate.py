@@ -3,6 +3,7 @@ import pathlib
 from Evaluater.Parsers.parse import Parser
 from Evaluater.globals.EvaluaterGlobals import LANGUAGES
 import os
+import re
 
 my_obj = Parser()
 
@@ -22,8 +23,8 @@ class Evaluater:
             if str(language) in LANGUAGES:
                 to_check_extension = LANGUAGES[language]
                 if language == "python3":
-                    file_extension = pathlib.Path(          
-                            "program.py"                
+                    file_extension = pathlib.Path(
+                            "program.py"
                     ).suffix
                     if file_extension == to_check_extension:
                         case = 1
@@ -39,17 +40,15 @@ class Evaluater:
                                 stdin=data
                             )
                             output = output.decode("utf-8")
-                            output = output.strip('\n')
-                            print(output)
-                            print(outp)
-                            if output == str(outp):
+                            output = re.sub('\s+', '', output)
+                            outp = re.sub('\s+', '', str(outp))
+                            if output == outp:
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
                             else:
                                 raise Exception(
                                     "Test Case " + str(case) + ": Failed"
                                 )
-
                     else:
                         raise Exception(
                             "language in lang.yaml and program file doesnt match"
@@ -63,7 +62,7 @@ class Evaluater:
                             [
                                 "g++",
                                 "-o",
-                                    "program", 
+                                    "program",
                                     "program.cpp"
                             ]
                         )
@@ -79,7 +78,8 @@ class Evaluater:
                                 stdin=data
                             )
                             output = output.decode("utf-8")
-                            output = output.strip('\n')
+                            output = re.sub('\s+', '', output)
+                            outp = re.sub('\s+', '', str(outp))
                             if output == str(outp):
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
@@ -117,7 +117,8 @@ class Evaluater:
                                 stdin=data
                             )
                             output = output.decode("utf-8")
-                            output = output.strip('\n')
+                            output = re.sub('\s+', '', output)
+                            outp = re.sub('\s+', '', str(outp))
                             if output == str(outp):
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
@@ -154,7 +155,8 @@ class Evaluater:
                                 stdin=data
                             )
                             output = output.decode("utf-8")
-                            output = output.strip('\n')
+                            output = re.sub('\s+', '', output)
+                            outp = re.sub('\s+', '', str(outp))
                             if output == str(outp):
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
