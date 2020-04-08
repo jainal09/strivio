@@ -32,6 +32,7 @@ class Evaluater:
                         print("in python")
                         case = 1
                         for inp, outp in zip(inputs, outputs):
+                            print("input",inp)
                             data, temp = os.pipe()
                             os.write(temp, bytes(str(inp), "utf-8"))
                             os.close(temp)
