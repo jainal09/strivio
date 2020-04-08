@@ -81,7 +81,7 @@ Click on `start-commit`
 10.  Add the below code.
 ```yaml
 language:
-	python3
+  python3
 ``` 
 
 11. Replace the name of Programming Language in the above code as follows.
