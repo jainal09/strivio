@@ -42,6 +42,10 @@ class Evaluater:
                             output = output.decode("utf-8")
                             output = re.sub('\s+', '', output)
                             outp = re.sub('\s+', '', str(outp))
+                            print(output+output)
+                            print(outp+outp)
+                            print(type(output))
+                            print(type(outp))
                             if output == outp:
                                 print("Test Case " + str(case) + ": Passed")
                                 case = case + 1
