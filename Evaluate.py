@@ -14,6 +14,7 @@ class Evaluater:
 
     def evaluate(self):
         io_yaml_parsed_dic = my_obj.parse_yaml(io_yaml_abs_path)
+        print(io_yaml_parsed_dic)
         io_dic = my_obj.io_fetcher(io_yaml_parsed_dic)
         language_dic = my_obj.parse_yaml(os.path.abspath("lang.yaml"))
         language = language_dic["language"]
