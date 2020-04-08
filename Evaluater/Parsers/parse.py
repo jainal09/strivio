@@ -9,6 +9,7 @@ class Parser:
                 data = yaml.safe_load(stream)
             except yaml.YAMLError as exc:
                 print(exc)
+        print(data)
         return data
 
     def io_fetcher(self, dic):
