@@ -74,7 +74,9 @@ Click on `start-commit`
 
 7. Supported Programming Languages `python, java, c++, c`
 
-8. Create a file program.py - supported extension with `.c .cpp .java .py`
+8. Create a file program.***extension*** - supported extension`.c .cpp .java .py`
+
+NOTE: for java Class name should be Main
 
 9. After Coding is done create a file 🗃️ **"lang.yaml"**
 
