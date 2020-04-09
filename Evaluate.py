@@ -160,7 +160,7 @@ class Evaluater:
                         subprocess.call(
                             [
                                 "javac",
-                                 os.path.abspath("Program.java")
+                                 os.path.abspath("program.java")
                             ]
                         )
                         case = 0
