@@ -76,7 +76,7 @@ Click on `start-commit`
 
 8. Create a file program.***extension*** - supported extension`.c .cpp .java .py`
 
-NOTE: for java Class name should be Main
+NOTE: for **java** Class name should be `Main`
 
 9. After Coding is done create a file 🗃️ **"lang.yaml"**
 
