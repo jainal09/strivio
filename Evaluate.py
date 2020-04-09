@@ -15,7 +15,7 @@ class Evaluater:
     def evaluate(self):
         io_yaml_parsed_dic = my_obj.parse_yaml(io_yaml_abs_path)
         io_dic = my_obj.io_fetcher(io_yaml_parsed_dic)
-        language_dic = my_obj.parse_yaml(os.path.abspath("lang.yaml"))
+        language_dic = my_obj.parse_yaml("lang.yaml")
         language = language_dic["language"]
         inputs = io_dic["inputs"]
         outputs = io_dic["outputs"]
@@ -152,9 +152,7 @@ class Evaluater:
                         )
                 elif language == "java":
                     file_extension = pathlib.Path(
-                        os.path.abspath(
                             "program.java"
-                        )
                     ).suffix
                     if file_extension == to_check_extension:
                         subprocess.call(
