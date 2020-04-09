@@ -171,7 +171,7 @@ class Evaluater:
                             output = subprocess.check_output(
                                 [
                                     "java",
-                                    "Program"
+                                    "Main"
                                 ],
                                 stdin=data
                             )
