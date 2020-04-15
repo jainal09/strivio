@@ -71,7 +71,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Results
-      uses: jainal09/strivio@master 
+      uses: jainal09/strivio@Production
       with:
         oath: ${{ secrets.oath }}
 ```
