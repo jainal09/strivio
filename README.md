@@ -3,7 +3,10 @@
    <img src="https://lh3.googleusercontent.com/W00hLNgAvooHHuwdzMK6hk-PIwMZ1ezA4BmSUWcxlLUQIJ9ea2KXEnePB0jkUfiKvLhUCh-lZ2-G-0-JE0Hwri0duWTxlbIxbXN118xsUtQ9W_z6yOIZc_qM1tmkSJ2sBm9QwDLTc80=w512-h338-no" alt="Strivio Logo"/>
 </p>
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jainal09/strivio)
+<p align="center">
+   <img src="https://img.shields.io/docker/cloud/build/jainal09/strivio" alt="docker build status"/>
+</p>
+
 
 ## Usage
 
