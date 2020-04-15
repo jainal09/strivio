@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-   <a href="https://hub.docker.com/repository/docker/jainal09/strivio/builds">
+   <a href="https://hub.docker.com/r/jainal09/strivio/builds">
    <img src="https://img.shields.io/docker/cloud/build/jainal09/strivio" alt="docker build status"/>
    </a>
 </p>
