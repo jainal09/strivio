@@ -14,7 +14,7 @@
 
 ## Organizers
 
- 1. Head to [DropBox](https://www.dropbox.com/developers/apps_tk=pilot_lp&_ad=topbar4&_camp=myapps) and Create an App
+ 1. Head to [DropBox](https://www.dropbox.com/developers/apps?_tk=pilot_lp&_ad=topbar4&_camp=myapps) and Create an App
  2. After you Create your Dropbox App click on Generate Access token and Copy it.![enter image description here](https://miro.medium.com/max/938/1*vLvuPuX5n-klKMConAXQug.png)
 3. Create a File Known as 🗃️ "IO.yaml" for all the Input / Output Test Cases
 4. The File should Look like this
