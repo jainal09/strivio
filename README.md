@@ -53,7 +53,7 @@ outputs:
     6  
 ```
 5. Upload this to the **Root Directory** of Drop Box and done 😃!
-6. Send the OATH token to participants - this works like an access token for the workshop.
+6. Send the OATH token to participants.
 ## Participants
 1. In GitHub Repo open Settings/Secrets and click on add a Secret
 2. Name of the secret should be **OATH** and value should be the access token which the organizer gave you!
@@ -130,14 +130,14 @@ Click on `start-commit`
 
 ![enter image description here](https://lh3.googleusercontent.com/fcgkExGB9GfqyzwilyWSF0PTlNmx_7zxixYwtSZyZ3QUTZy-TGA56rpg92WYvhHX0BMvx-PV6rJSYILwcxslKMnUNNJcduHDyvwkY0fcEXyzEY5nN3d9Z47gAfqnkG5xmptR4rIjfn8oa2chIXiZ7hsQY7Evl9kOsIcxynJueJibi8dScoXYNtd90Rgc2Fi_oT7OhtJKjvaVlxYaR4AhTDFrsy_1VksCThDR9hAPhF3e3QWncYfO28wczHDe80YQ_x7ZAn_5yLV1SYHc23n3Xq2seaI-j5F8rBFPkjlfC7WX70I52hAybSNet7MKZG1PvIpnTSZKjU35N9SoDfnjGJv5W6rxdLY9y-_tx2zAs1qp6HaIx0XQNBpoCJeVv90p_3pS7cLVhgd-pA7upl23B5WcGHKe4bpKojav1jqRZrUu5fN9R7Ic2pA82-cgfrtVSWXt6v3_LxR0LiRaDR-xrvxmGCEQI4-a6vDZlqMfLcVF9jmamILtwtbIuPvv8hxOivoe_IjPB5lkAnP6vMSsqv4fuEagFHuy4rMiFO6bTeReM1wdvCvnssM-E9b34z-FeW5UP6WICqvSEdK_p79XdzSmx3zL3iagXweSlwcriKJSSuxr9xtdPkgdv1UwfF_yfOWAWFv4GjFCWvfCDee40O_2zZoynFYUx9RaZ9R2TemE1_G3D06DH7wNA9KOLEWtX32R2CFGHTLwZTZdjeoj9fS8qYH9SYkY2d8E8g3eSi-vlLte=w367-h125-no) 
 
- *Success Full Build with all Test Case Passed*
+ *☝️Successful Build with all Test Case Passed🤘.*
  
 ![enter image description here](https://lh3.googleusercontent.com/dw50RL8AZ4_qJnLj5s-yP8RjWlZ4jaxzIoBVPDmxuA_ePkh60nZNjPWR_cr-QQ8rNrOr61LHaV8cMK9MigDQV_Q-brhyjmwfrGo9__fM78O1G57FwCoJBVLol4nv_YzBH4tQi-7TaCekp9-Rn9qScK3kSnrpdYDVYXnnxtxB-iiGmLEsVX0kIaRQXTuCfClpoRXDAA3YCzltJuQl6UPvUKzUKWLhsiLJuoP5SKU35INUZuI5Kj5dI0EddEq2JuWkJtsTfBy3p3wimd5eZWx6mItgh4ev15Iy5i2M0xIy20a3PNTtPoi5uVIqFeJtHryuoCSTkwkTn6o3bCXWaOQ9dMCSdLH9Yo1-fF1cyueuSRYRRXyF-cVpwWlLuxPLhZalD9de66uI1ul2RHD3HDQlOQhX8yc0odNQj_BrqxXp9N4Fk2lI60eXODdUfzuInjM7UlYGVk4kNr1uJlNOuDD41DlarPaqvrJuSQaj8xm5M5w98r6mLheumxwbGoNwhifSxjecpYo20U_qLFTvkT5Tar_UqnBJr_m0EJMN6nyqxf-0z9MHCPAyyDTt_fnctdn966Wc12_8eCHJbb54Vd0XffVXrVibyzJd7MPHs_viycXnQbj4sNBXAOTKet5_SBGaNiK3EZMamb9Ebm-hO5HQm2IB2vkHJEuulJ5aNMT6RFe4glhVVgai6bz1Hkn4j9FpXdcjRaYhyzz6KKCqYTGx71kpfQbvsgkm3wG3j1zMvayh1Liu=w1440-h401-no)
 
-*Build Failed as Code Didn't Passed all the Test Cases*
+*☝️Build Failed as Code Didn't Passed all the Test Cases😬.*
 
 Sample Test Repo - https://github.com/jainal09/strivio-in-action
 
 **Done! thats how you can host coding competetion on GitHub like Hackerrank etc** 
 
-Docker Hub - https://hub.docker.com/repository/docker/jainal09/strivio
+Docker Hub - https://hub.docker.com/r/jainal09/strivio
