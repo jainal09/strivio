@@ -22,6 +22,7 @@ Alternate Link : https://www.dropbox.com/developers/documentation
 - Click Full Dropbox
 - Give any name to app and Click create app
  2. After you Create your Dropbox App click on Generate Access token and Copy it.![enter image description here](https://miro.medium.com/max/938/1*vLvuPuX5n-klKMConAXQug.png)
+ 
  This token is to be shared with participants. This works as a login access key for the competetion.
  
 3. Create a File Known as 🗃️ "IO.yaml" for all the Input / Output Test Cases
