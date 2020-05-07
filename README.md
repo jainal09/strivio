@@ -7,6 +7,10 @@
    <a href="https://hub.docker.com/r/jainal09/strivio/builds">
    <img src="https://img.shields.io/docker/cloud/build/jainal09/strivio" alt="docker build status"/>
    </a>
+   <a href="https://dev.to/jainal09/how-i-made-a-github-action-to-host-coding-competition-on-github-5bnf">
+   <img src="https://img.shields.io/badge/dev.to-blog-green" alt="dev.to blog link"/>
+   </a>
+   
 </p>
 
 
